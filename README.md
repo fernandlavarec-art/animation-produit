@@ -63,8 +63,10 @@ tools/                   render.mjs, sheet.py, finish.sh, setup.sh
 | `beach` | plage : mer animée (`updateSea` + `beachH`), cabines, palmiers, poste de secours |
 | `wave` | wave park : bassin à vague artificielle (`updateWater` + `waveH`) |
 | `traffic` | autoroute bouchée : files de voitures, conducteurs visibles |
+| `snow` | extérieur de nuit : chalet illuminé sous la neige, sapins, lune, flocons animés |
+| `chalet` | intérieur de chalet : grande table en bois, bancs, cheminée animée, fenêtre de nuit enneigée, guirlande |
 
-Lumières : `day`, `golden` (soir), `office` et `metro`.
+Lumières : `day`, `golden` (soir), `office`, `metro`, `nuit` (intérieur chaleureux) et `lune` (extérieur de nuit).
 
 ### API d'un scénario (`export default function (E) { … }`)
 
@@ -100,4 +102,6 @@ Lumières : `day`, `golden` (soir), `office` et `metro`.
 ## Scénarios fournis
 
 - `planche-surf` : « La planche de Marc », une planche de surf démontable en 3 morceaux (30 s).
+- `raclette-chalet` : « La raclette de Léa », machine à raclette 3-en-1 (raclette, mini pizzas, cookies) avec poêlons à revêtement isolant (30 s). Plan : `PLAN-raclette.md`.
+- `test-chalet` : images de contrôle des décors `snow` / `chalet` et du produit `raclette`.
 - `apercu` : valide le modèle 3D d'un produit (`PRODUCT=<nom>`).
