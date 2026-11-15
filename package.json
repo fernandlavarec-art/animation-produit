@@ -1,0 +1,17 @@
+{
+  "name": "animation-produit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Moteur de vidéos animées « scénario d'usage produit » : Three.js + Playwright, flat design, personnages Moderne, sous-titres incrustés.",
+  "scripts": {
+    "setup": "bash tools/setup.sh",
+    "apercu": "node tools/render.mjs stills stills/apercu 0",
+    "stills": "node tools/render.mjs stills",
+    "frames": "node tools/render.mjs frames"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "three": "0.160.0"
+  }
+}
